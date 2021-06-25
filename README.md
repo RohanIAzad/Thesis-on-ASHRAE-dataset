@@ -6,12 +6,14 @@ After merging the 3 subsets, (train, building_metadata_save, weather_train3) and
 They are- 0: Electricity, 1: Chilled water, 2: Steam, 3: Hot water
 The calculations were divided into 4 parts based on these meter types.
 The individual files are called:
-1. ASHRAE GPU-Chilled water.ipynb
-2. ASHRAE GPU-Chilled water (Feature engineering).ipynb
-3. ASHRAE GPU-Steam.ipynb
-4. ASHRAE GPU-Steam(deleting outliers).ipynb
-5. ASHRAE GPU-Electricity.ipynb
-6. ASHRAE GPU-Hot water.ipynb.
-Finally, a cleaner and final version of chilled_water notebook has been uploaded as “ASHRAE-final chilled water.ipynb”
+1. ASHRAE Chilled water.ipynb
+2. ASHRAE Chilled water (Feature engineering).ipynb
+3. ASHRAE Steam.ipynb
+4. ASHRAE Steam(deleting outliers).ipynb
+5. ASHRAE Electricity.ipynb
+6. ASHRAE Hot water.ipynb.
+
+Data loading and data preparation for all teh fiels in the list above is the same. But training and test split is different depending on the meter type. Also, the algorithms that were best for predicting meter readings in KWH each of the meter types were different. 
+
 
 
