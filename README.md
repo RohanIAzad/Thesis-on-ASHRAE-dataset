@@ -5,6 +5,9 @@ Also, the timestamp column was divided into year, month, day columns in RStudio.
 After merging the 3 subsets, (train, building_metadata_save, weather_train3) and for test set (test, building_metadata_save, weather_test2) there were 4 types of meter readings. 
 They are- 0: Electricity, 1: Chilled water, 2: Steam, 3: Hot water
 The calculations were divided into 4 parts based on these meter types.
+
+Feature engineering was also attempted to test if the performance improved. But adding information about seasons, beaufort scale did not imrpove the predictions. Lots of outliers were coming from steam portion of the dataset as can be seen in the "ASHRAE data visualization". So, Steam with outliers deleted was also trained to see if the performance improved and it did.  
+
 The individual files are called:
 1. ASHRAE Chilled water.ipynb
 2. ASHRAE Chilled water (Feature engineering).ipynb
