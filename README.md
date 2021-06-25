@@ -16,7 +16,9 @@ The individual files are called:
 5. ASHRAE Electricity.ipynb
 6. ASHRAE Hot water.ipynb.
 
-Data loading and data preparation for all teh fiels in the list above is the same. But training and test split is different depending on the meter type. Also, the algorithms that were best for predicting meter readings in KWH each of the meter types were different. 
+Data loading and data preparation for all the fiels in the list above is the same. But training and test split is different depending on the meter type. Also, the algorithms that were best for predicting meter readings in KWH each of the meter types were different. 
 
+The simplified algorithm for the training phase is shown below.
 
+![](image/Algorithm.PNG)
 
