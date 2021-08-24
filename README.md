@@ -31,6 +31,7 @@ __Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 # EDA
 
    
+   
    ged the 3 subsets of data to create 1 tarining set.
 
 
