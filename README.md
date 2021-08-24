@@ -32,9 +32,11 @@ __Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 
 # EDA
 There were 4 types of meters in the dataset. Their counts are shown below-
+
 ![](image/Count of meter types.JPG)
 
-Analysing EDA it was found that the outliers were coming from building_id 1099 which was being used for education situated in site_id 13 and the meter type was steam. 
+Analysing EDA it was found that the outliers were coming from building_id 1099 which was being used for education situated in site_id 13 and the meter type was steam.
+
 ![](image/Total meter reading reading VS timestamp.JPG)
    
    
