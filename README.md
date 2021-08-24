@@ -10,17 +10,17 @@ __Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 
 # Features in the dataset
 
-|train        |building_metadata|weather_train     |
-|-------------|-----------------|------------------|                                                     
-|building_id  | site_id         |site_id           |                    
-|meter        | building_id     |timestamp         |                   
-|tmestamp     | primary_use     |air_temperature   |                  
-|meter reading| square feet     |cloud_coverage    |
-|             | year_built      |dew_temperature   |
-|             | floor_count     |precip_depth_1_hr |
-|             |                 |sea_level_pressure|
-|             |                 |wind_direction    |
-|             |                 |wind_speed        |
+|train        |building_metadata|weather_train     |test       |
+|-------------|-----------------|------------------|-----------|                                         
+|building_id  | site_id         |site_id           |building_id|                    
+|meter        | building_id     |timestamp         |meter      |            
+|tmestamp     | primary_use     |air_temperature   |timestamp  |           
+|meter reading| square feet     |cloud_coverage    |           |  
+|             | year_built      |dew_temperature   |           |
+|             | floor_count     |precip_depth_1_hr |           |
+|             |                 |sea_level_pressure|           |
+|             |                 |wind_direction    |           |
+|             |                 |wind_speed        |           |
                                    
 
 # Data cleaning
