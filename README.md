@@ -40,7 +40,7 @@ Analysing EDA it was found that the outliers were coming from building_id 1099 w
 ![](image/Total_meter_reading_VS_timestamp.JPG)
    
    
-  
+# Feature Engineering 
 Feature engineering was also attempted to test if the performance improved. But adding information about seasons, beaufort scale did not imrpove the predictions. Lots of outliers were coming from steam portion of the dataset as can be seen in the "ASHRAE data visualization". So, Steam with outliers deleted was also trained to see if the performance improved and it did.  
 
 The individual files are called:
