@@ -27,7 +27,7 @@ Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 
 # Data cleaning
 * Splitting timestamp to create year, month, day in RStudio
-* Made us eof pandas concat and merged 3 subsets of data (train, building_metadata, weather_train) to create 1 tarinig set and test set (test,building_metadata, weather_test)
+* Made use of pandas concat and merged 3 subsets of data (train, building_metadata, weather_train) to create 1 tarinig set and test set (test,building_metadata, weather_test)
 * Checked for missing values and filled those accordingly using RStudio, python, excel.
 
 # EDA
