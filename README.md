@@ -8,7 +8,7 @@
 
 # Code and Resources Used
 
-__Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
+Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 
 # Features in the dataset
 
