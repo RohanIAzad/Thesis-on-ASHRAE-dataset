@@ -23,35 +23,16 @@ meter reading       square feet               cloud_coverage
                                    
 
 # Data cleaning
-## Splitting timestamp to create year, month, day in RStudio
+* Splitting timestamp to create year, month, day in RStudio
+* Made us eof pandas concat and merged 3 subsets of data (train, building_metadata, weather_train) to create 1 tarinig set and test set (test,building_metadata, weather_test)
+* Checked for missing values and filled those accordingly using RStudio, python, excel.
 
-** ** _ _setwd('C:/Users/Rohan/Desktop/ashrae-energy-prediction')
+# EDA
 
-** ** _ _weather_train<-read.csv('C:/Users/Rohan/Desktop/ashrae-energy-prediction/weather_train.csv')
+   
+   ged the 3 subsets of data to create 1 tarining set.
 
-** ** _ _#getting the timestamp separated into day,month, year
 
-** ** _ _weather_train$timestamp[1]
-
-** ** _ _weather_train$timestamp <- as.character(weather_train$timestamp)
-
-** ** _ _strsplit(weather_train$timestamp[1], split='[- :]')
-strsplit(weather_train$timestamp[1], split='[- :]')[[1]]
-strsplit(weather_train$timestamp[1], split='[- :]')[[1]][3]
-
-** ** _ _weather_train$Month <- sapply(weather_train$timestamp, FUN=function(x) {strsplit(x, split='[- :]')[[1]][2]})
-weather_train$Month <- sub(' ', '', weather_train$Month)
-table(weather_train$Month)
-
-** ** _ _weather_train$Day_date <- sapply(weather_train$timestamp, FUN=function(x) {strsplit(x, split='[- :]')[[1]][3]})
-weather_train$Day_date <- sub(' ', '', weather_train$Day_date)
-table(weather_train$Day_date)
-
-** ** _ _weather_train$year <- sapply(weather_train$timestamp, FUN=function(x) {strsplit(x, split='[- :]')[[1]][1]})
-weather_train$year <- sub(' ', '', weather_train$year)
-table(weather_train$year)
-
-Merged the 3 subsets of data to create 1 tarining set.
 Merged train and building_metadata as such-
 
 ** ** _ _temp=train[['building_id']]
