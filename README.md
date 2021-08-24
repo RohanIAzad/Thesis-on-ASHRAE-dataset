@@ -2,6 +2,7 @@
 * Created a tool that would help engineers from American Society of Heating, Refrigeration and Air-conditioning Engineers (ASHRAE) determine what energy saving technology is worth investing in.
 * The dataset was provided by ASHRAE and can be found here https://www.kaggle.com/c/ashrae-energy-prediction/data. There were 20 million records for the training set and 40 million records for the test sets
 * The flowchart at the end provides an understanding of the problem.
+  * ![](image/Algorithm.PNG)
 * Optimized Linear, Lasso, ridge regression using GridSearchCV to come up with the best performing model, Also made use of Support Vector Regressor, Decision Tree, Ensemble methods, Bagging regressor, gradient boosting. 
 * There were 4 meter readings in the dataset. Analysis for each of those meter readings were done separately and then teh predictions were merged into one csv file.
 
@@ -29,27 +30,14 @@ __Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 * Checked for missing values and filled those accordingly using RStudio, python, excel.
 
 # EDA
+There were 4 types of meters in the dataset. Their counts are shown below-
+![](image/Count of meter types.JPG)
 
+Analysing EDA it was found that the outliers were coming from building_id 1099 which was being used for education situated in site_id 13 and the meter type was steam. 
+![](image/Total meter reading reading VS timestamp.JPG)
    
    
-   ged the 3 subsets of data to create 1 tarining set.
-
-
-Merged train and building_metadata as such-
-
-** ** _ _temp=train[['building_id']]
-temp=temp.merge(building_met,on='building_id',how='left')
-del temp['building_id']
-train=pd.concat([train,temp],axis=1)
-
-Merged train,building_metadata and weather train_train as such-
-
-** ** _ _temp=train[['site_id','timestamp']]
-temp=temp.merge(weather_train,on=['site_id','timestamp'],how='left')
-del temp['site_id'],temp['timestamp']
-train=pd.concat([train,temp],axis=1)
-del temp,weather_train
-
+  
 
 
 There were a lot of missing values in the dataset. 
@@ -73,5 +61,5 @@ Data loading and data preparation for all the fiels in the list above is the sam
 
 The simplified algorithm for the training phase is shown below.
 
-![](image/Algorithm.PNG)
+
 
