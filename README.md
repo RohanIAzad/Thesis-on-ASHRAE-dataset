@@ -21,15 +21,52 @@ meter reading       square feet               cloud_coverage
                                               wind_direction
                                               wind_speed
                                    
-#Data cleaning
+
+# Data cleaning
+## Splitting timestamp to create year, month, day in RStudio
+
+** ** _ _setwd('C:/Users/Rohan/Desktop/ashrae-energy-prediction')
+
+** ** _ _weather_train<-read.csv('C:/Users/Rohan/Desktop/ashrae-energy-prediction/weather_train.csv')
+
+** ** _ _#getting the timestamp separated into day,month, year
+
+** ** _ _weather_train$timestamp[1]
+
+** ** _ _weather_train$timestamp <- as.character(weather_train$timestamp)
+
+** ** _ _strsplit(weather_train$timestamp[1], split='[- :]')
+strsplit(weather_train$timestamp[1], split='[- :]')[[1]]
+strsplit(weather_train$timestamp[1], split='[- :]')[[1]][3]
+
+** ** _ _weather_train$Month <- sapply(weather_train$timestamp, FUN=function(x) {strsplit(x, split='[- :]')[[1]][2]})
+weather_train$Month <- sub(' ', '', weather_train$Month)
+table(weather_train$Month)
+
+** ** _ _weather_train$Day_date <- sapply(weather_train$timestamp, FUN=function(x) {strsplit(x, split='[- :]')[[1]][3]})
+weather_train$Day_date <- sub(' ', '', weather_train$Day_date)
+table(weather_train$Day_date)
+
+** ** _ _weather_train$year <- sapply(weather_train$timestamp, FUN=function(x) {strsplit(x, split='[- :]')[[1]][1]})
+weather_train$year <- sub(' ', '', weather_train$year)
+table(weather_train$year)
+
 Merged the 3 subsets of data to create 1 tarining set.
 Merged train and building_metadata as such-
-'''ruby
-temp=train[['building_id']]
+
+** ** _ _temp=train[['building_id']]
 temp=temp.merge(building_met,on='building_id',how='left')
 del temp['building_id']
 train=pd.concat([train,temp],axis=1)
-'''
+
+Merged train,building_metadata and weather train_train as such-
+
+** ** _ _temp=train[['site_id','timestamp']]
+temp=temp.merge(weather_train,on=['site_id','timestamp'],how='left')
+del temp['site_id'],temp['timestamp']
+train=pd.concat([train,temp],axis=1)
+del temp,weather_train
+
 
 
 There were a lot of missing values in the dataset. 
