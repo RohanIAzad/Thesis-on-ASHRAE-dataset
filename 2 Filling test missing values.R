@@ -32,8 +32,5 @@ weather_test_time<- data.frame(site_id=weather_test$site_id,timestamp=weather_te
                                 year=weather_test$year)
 write.csv(weather_test_time,file='weather_test_time.csv',row.names=FALSE)
 
-#filling missing values with mean specific site_id
 
-#by(data=weather_train$air_temperature,INDICES=weather_train$site_id,FUN=mean,na.rm=TRUE)
-#filling air temperature with site_id0
 
