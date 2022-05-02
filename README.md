@@ -25,7 +25,7 @@ Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 |             |                 |wind_speed        |           |
                                    
 
-# 3. ProcessData cleaning
+# 3. Process Data cleaning
 * Splitting timestamp to create year, month, day in RStudio
 * Made use of pandas concat and merged 3 subsets of data (train, building_metadata, weather_train) to create 1 tarinig set and test set (test,building_metadata, weather_test)
 * Checked for missing values and filled those accordingly using RStudio, python, excel.
