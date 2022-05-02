@@ -34,7 +34,7 @@ Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 * Made use of pandas concat and merged 3 subsets of data (train, building_metadata, weather_train) to create 1 tarinig set and test set (test,building_metadata, weather_test)
 * Checked for missing values and filled those accordingly using RStudio, python, excel.
 
-# 4. Analyse EDA
+# 4. Analyse EDA / Share
 There were 4 types of meters in the dataset. Their counts are shown below-
 
 ![](image/Count_of_meter_types.JPG)
