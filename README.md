@@ -25,12 +25,12 @@ Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 |             |                 |wind_speed        |           |
                                    
 
-# Data cleaning
+# 3. ProcessData cleaning
 * Splitting timestamp to create year, month, day in RStudio
 * Made use of pandas concat and merged 3 subsets of data (train, building_metadata, weather_train) to create 1 tarinig set and test set (test,building_metadata, weather_test)
 * Checked for missing values and filled those accordingly using RStudio, python, excel.
 
-# EDA
+# 4. Analyse EDA
 There were 4 types of meters in the dataset. Their counts are shown below-
 
 ![](image/Count_of_meter_types.JPG)
