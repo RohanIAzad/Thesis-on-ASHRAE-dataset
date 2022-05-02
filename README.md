@@ -7,11 +7,11 @@
 * Optimized Linear, Lasso, ridge regression using GridSearchCV to come up with the best performing model, Also made use of Support Vector Regressor, Decision Tree, Ensemble methods, Bagging regressor, gradient boosting. 
 * There were 4 meter readings in the dataset. Analysis for each of those meter readings were done separately and then the predictions were merged into one csv file.
 
-# Code and Resources Used
+### Code and Resources Used
 
 Python packages: pandas, numpy,matplotlib,seaborn, sklearn,
 
-2. Prepare
+# 2. Prepare
 * The dataset was provided by ASHRAE and can be found here https://www.kaggle.com/c/ashrae-energy-prediction/data. There were 20 million records for the training set and 40 million records for the test set.
 
 # Features in the dataset
