@@ -53,6 +53,9 @@ The individual files are called:
 
 Data loading and data preparation for all the fiels in the list above is the same. But training and test split is different depending on the meter type. Also, the algorithms that were best for predicting meter readings in KWH each of the meter types were different. 
 
+# 5. Act
+The engineers from ASHRAE can use the ML models produced in this project to get a better understanding of which energy saving technology would be more fruitful for investing time and research in. 
+
 
 
 
